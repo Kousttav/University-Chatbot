@@ -1,0 +1,213 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hello",
+          "Hey",
+          "Good morning",
+          "Good afternoon",
+          "Good evening"
+        ],
+        "responses": [
+          "Hello! Welcome to UEM Kolkata information portal. How can I help you today?",
+          "Hi there! How can I assist you with UEM Kolkata queries?",
+          "Greetings! What would you like to know about UEM Kolkata?"
+        ],
+        "sentiment": "positive"
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Bye",
+          "Goodbye",
+          "See you later",
+          "I have to go",
+          "Take care"
+        ],
+        "responses": [
+          "Goodbye! Feel free to ask if you have more questions about UEM Kolkata.",
+          "Have a great day! Don't hesitate to return if you need more information.",
+          "See you soon! Remember UEM Kolkata is always innovating in education."
+        ],
+        "sentiment": "neutral"
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+          "Thanks",
+          "Thank you",
+          "That's helpful",
+          "Appreciate it",
+          "Awesome, thanks"
+        ],
+        "responses": [
+          "Happy to help! Let me know if you have other questions about UEM Kolkata.",
+          "You're welcome! Is there anything else you'd like to know?",
+          "My pleasure! UEM Kolkata aims to provide excellent information service."
+        ],
+        "sentiment": "positive"
+      },
+      {
+        "tag": "about_university",
+        "patterns": [
+          "What is UEM Kolkata?",
+          "Tell me about UEM Kolkata",
+          "About the university",
+          "Information about UEM",
+          "What kind of institution is UEM?"
+        ],
+        "responses": [
+          "UEM Kolkata (University of Engineering & Management) is a premier private university in West Bengal, India. It offers undergraduate, postgraduate and doctoral programs in Engineering, Management, Law and other disciplines with a focus on innovation and research.",
+          "UEM Kolkata is a leading private university known for its quality education in engineering and management. It was established to provide world-class education with state-of-the-art infrastructure and industry-relevant curriculum.",
+          "The University of Engineering & Management, Kolkata is a UGC-approved institution that emphasizes hands-on learning, industry collaboration, and holistic development of students."
+        ],
+        "sentiment": "neutral"
+      },
+      {
+        "tag": "location",
+        "patterns": [
+          "Where is UEM Kolkata located?",
+          "Address of UEM",
+          "How to reach UEM Kolkata?",
+          "Campus location",
+          "Where is the university?"
+        ],
+        "responses": [
+          "UEM Kolkata is located at University Area, Plot No. III, B/5, New Town, Action Area III, Kolkata, West Bengal 700160, India.",
+          "The university campus is situated in New Town, Kolkata's modern planned city. The exact address is: Plot No. III, B/5, New Town, Action Area III, Kolkata - 700160.",
+          "You can find UEM Kolkata in New Town's Action Area III, which is well-connected by road and soon by metro as well."
+        ],
+        "sentiment": "neutral"
+      },
+      {
+        "tag": "courses",
+        "patterns": [
+          "What courses are offered?",
+          "Programs available",
+          "List of degrees",
+          "What can I study at UEM?",
+          "Educational programs"
+        ],
+        "responses": [
+          "UEM Kolkata offers a wide range of programs including BTech in various engineering disciplines, MBA, BBA, BCA, Law programs (BA LLB, BBA LLB), and PhD programs. The university is known for its Computer Science, Electronics, and Management programs.",
+          "You can pursue undergraduate programs like BTech, BBA, BCA, Law, postgraduate programs like MTech, MBA, and research programs (PhD) at UEM Kolkata. The university offers specializations in emerging technologies.",
+          "The academic programs at UEM Kolkata include Engineering (CSE, ECE, CE, ME, EE), Management (BBA, MBA), Computer Applications (BCA), Law (BA LLB, BBA LLB), and Doctoral studies across disciplines."
+        ],
+        "sentiment": "neutral"
+      },
+      {
+        "tag": "admission",
+        "patterns": [
+          "How to get admission?",
+          "Admission process",
+          "Eligibility criteria",
+          "How to apply?",
+          "Admission requirements"
+        ],
+        "responses": [
+          "Admission to UEM Kolkata is based on merit and entrance exams. For BTech, candidates need to appear for UEM JEE or have valid JEE Main scores. For MBA, valid CAT/MAT/XAT/CMAT scores are considered. You can apply online through the university website.",
+          "The admission process varies by program. Generally, you need to fill the application form, submit required documents, and appear for counseling. Some programs have entrance tests. Visit the admissions section on the UEM website for detailed information.",
+          "Eligibility differs by program. For BTech, you need 10+2 with Physics, Chemistry, and Mathematics. For MBA, a bachelor's degree is required. Check the university website for specific requirements of each program."
+        ],
+        "sentiment": "neutral"
+      },
+      {
+        "tag": "fees",
+        "patterns": [
+          "What is the fee structure?",
+          "How much does it cost?",
+          "Tuition fees",
+          "Course fees",
+          "What are the fees?"
+        ],
+        "responses": [
+          "The fee structure at UEM Kolkata varies by program. BTech program fees are approximately ₹1.5-2 lakhs per year, while MBA is around ₹2-2.5 lakhs per year. The university offers scholarships for meritorious students.",
+          "Tuition fees depend on the program you choose. Engineering programs typically range from ₹1.5-2 lakhs annually, while management programs are slightly higher. For exact current fees, please check the university website or contact the admissions office.",
+          "UEM Kolkata has a competitive fee structure with various payment options. Exact fees are program-specific and may change annually. The university provides transparent fee details during the admission process."
+        ],
+        "sentiment": "neutral"
+      },
+      {
+        "tag": "placement",
+        "patterns": [
+          "What about placements?",
+          "Career opportunities",
+          "Job placement",
+          "Companies that recruit",
+          "Placement statistics"
+        ],
+        "responses": [
+          "UEM Kolkata has an excellent placement record with top companies like TCS, Wipro, Cognizant, Capgemini, Amazon, and many more visiting the campus. The university's placement cell provides training and internship opportunities to enhance employability.",
+          "The university boasts strong industry connections with placement rates consistently above 85%. Average package varies by program, with the highest packages around ₹15-20 LPA for engineering and ₹10-15 LPA for management graduates.",
+          "UEM Kolkata's dedicated placement cell organizes campus recruitment drives, internship opportunities, and career counseling. Many students secure positions in leading IT, consulting, and manufacturing companies even before graduation."
+        ],
+        "sentiment": "positive"
+      },
+      {
+        "tag": "facilities",
+        "patterns": [
+          "What facilities are available?",
+          "Campus infrastructure",
+          "Hostel facilities",
+          "Library",
+          "Sports facilities"
+        ],
+        "responses": [
+          "UEM Kolkata offers state-of-the-art facilities including modern classrooms, well-equipped labs, a central library, hostel accommodation, sports complex, cafeteria, medical facilities, and high-speed WiFi across campus.",
+          "The university campus has excellent infrastructure with smart classrooms, advanced laboratories, a rich library collection, separate hostels for boys and girls, sports grounds, gymnasium, and various student activity centers.",
+          "Students at UEM Kolkata enjoy facilities like a fully-equipped auditorium, seminar halls, computer centers, innovation labs, cafeteria, health center, and transportation services along with academic resources."
+        ],
+        "sentiment": "positive"
+      },
+      {
+        "tag": "negative_feedback",
+        "patterns": [
+          "I'm not satisfied",
+          "This is disappointing",
+          "Poor service",
+          "Not good enough",
+          "I'm unhappy"
+        ],
+        "responses": [
+          "I'm sorry to hear that. UEM Kolkata constantly strives to improve. Could you please share more details about your concern so I can assist better?",
+          "We regret your dissatisfaction. The university values feedback to enhance services. Would you like me to connect you with a human representative?",
+          "Your feedback is important to us. UEM Kolkata is committed to excellence. Please let me know how we can address your concerns."
+        ],
+        "sentiment": "negative"
+      },
+      {
+        "tag": "positive_feedback",
+        "patterns": [
+          "Great job",
+          "Awesome",
+          "I'm impressed",
+          "Excellent information",
+          "Well done"
+        ],
+        "responses": [
+          "Thank you for your kind words! UEM Kolkata aims to provide the best possible information and services to students and visitors.",
+          "We're delighted to hear your positive feedback! The university continuously works to maintain high standards in education and services.",
+          "Your appreciation means a lot! UEM Kolkata values such feedback as it motivates us to keep improving."
+        ],
+        "sentiment": "positive"
+      },
+      {
+        "tag": "contact",
+        "patterns": [
+          "How to contact?",
+          "Phone number",
+          "Email address",
+          "Contact information",
+          "Office details"
+        ],
+        "responses": [
+          "You can contact UEM Kolkata at: Phone: +91 33 6627 0600 / 0601, Email: info@uem.edu.in. The admission office is available from 9:00 AM to 5:00 PM on weekdays.",
+          "For inquiries, please contact: Phone: +91 33 6627 0600, Email: admissions@uem.edu.in. You can also visit the official website for specific department contacts.",
+          "UEM Kolkata's main contact: Phone: +91 33 6627 0600, Email: info@uem.edu.in. For program-specific queries, check the university website for department contacts."
+        ],
+        "sentiment": "neutral"
+      }
+    ]
+  }

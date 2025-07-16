@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEM Kolkata Chatbot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <!-- Replace the text with logo -->
+            <div class="uem-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/University_of_Engineering_and_Management_Kolkata_logo.png/640px-University_of_Engineering_and_Management_Kolkata_logo.png" 
+                    alt="UEM Kolkata Logo">
+            </div>
+            <h2>UEM Kolkata Assistant</h2>
+            <div class="chat-controls">
+                <button id="clear-chat" title="Clear conversation"><i class="fas fa-trash-alt"></i></button>
+            </div>
+        </div>
+        
+        <div class="chat-box" id="chat-box">
+            <div class="bot-message welcome-message">
+                <p>Hello! I'm your UEM Kolkata assistant. How can I help you today? 😊</p>
+                <p>Try asking about admissions, programs, or campus facilities.</p>
+            </div>
+        </div>
+        
+        <div class="sample-questions-container" id="sample-questions">
+            <!-- Sample questions will be inserted here by JavaScript -->
+        </div>
+        
+        <div class="input-container">
+            <button id="toggle-samples" title="Show sample questions">
+                <i class="fas fa-lightbulb"></i>
+            </button>
+            <input type="text" id="user-input" placeholder="Ask me anything about UEM Kolkata..." 
+                   onkeypress="handleKeyPress(event)" autocomplete="off">
+            <button id="send-button" onclick="sendMessage()">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            addSampleQuestions();
+            setupEventListeners();
+            restoreChatHistory();
+        });
+        const facultyDatabase = {
+            "maumita chakraborty": {
+                name: "Prof. (Dr.) Maumita Chakraborty",
+                acronym: "MCH",
+                phone: "9088104604",
+                email: "maumita.chakraborty@uem.edu.in"
+            },
+            "subhalaxmi chakraborty": {
+                name: "Prof. (Dr.) Subhalaxmi Chakraborty",
+                acronym: "SLC",
+                phone: "9831188685",
+                email: "subhalaxmi.chakraborty@uem.edu.in"
+            },
+            "srilekha mukherjee": {
+                name: "Prof. (Dr.) Srilekha Mukherjee",
+                acronym: "SLM",
+                phone: "9432253556",
+                email: "srilekha.mukherjee@uem.edu.in"
+            },
+            "sudipta basu pal": {
+                name: "Prof. (Dr.) Sudipta Basu Pal",
+                acronym: "SBP",
+                phone: "9674335060",
+                email: "sudipta.basu@uem.edu.in"
+            },
+            "sankhadeep chatterjee": {
+                name: "Prof. (Dr.) Sankhadeep Chatterjee",
+                acronym: "SDC",
+                phone: "8910874737",
+                email: "sankhadeep.chatterjee@uem.edu.in"
+            },
+            "piyali chandra": {
+                name: "Prof. Piyali Chandra",
+                acronym: "PYC",
+                phone: "9007471626",
+                email: "piyali.chandra@uem.edu.in"
+            },
+            "prasenjit kumar das": {
+                name: "Prof. (Dr.) Prasenjit Kumar Das",
+                acronym: "PND",
+                phone: "8638029694",
+                email: "prasenjit.das@uem.edu.in"
+            },
+            "pradipta sarkar": {
+                name: "Prof. Pradipta Sarkar",
+                acronym: "PRS",
+                phone: "9433443926",
+                email: "pradipta.sarkar@uem.edu.in"
+            },
+            "rajendrani mukherjee": {
+                name: "Prof. (Dr.) Rajendrani Mukherjee",
+                acronym: "RJM",
+                phone: "8777051141",
+                email: "rajendrani.mukherjee@uem.edu.in"
+            },
+            "sanjukta mishra": {
+                name: "Prof. Sanjukta Mishra",
+                acronym: "SJM",
+                phone: "8240928257",
+                email: "sanjukta.mishra@uem.edu.in"
+            },
+            "sudipta sikdar": {
+                name: "Prof. Sudipta Sikdar",
+                acronym: "SDS",
+                phone: "8240616301",
+                email: "sudipta.sikdar@uem.edu.in"
+            },
+            "kamalika bhowal": {
+                name: "Prof. Kamalika Bhowal",
+                acronym: "KMB",
+                phone: "9581839829",
+                email: "kamalika.bhowal@uem.edu.in"
+            },
+            "chiradeep mukherjee": {
+                name: "Prof. (Dr.) Chiradeep Mukherjee",
+                acronym: "CME",
+                phone: "9804244362",
+                email: "chiradeep.mukherjee@uem.edu.in"
+            },
+            "arpita saha chowdhury": {
+                name: "Prof. Arpita Saha Chowdhury",
+                acronym: "ASC",
+                phone: "9830677260",
+                email: "arpita.sahachowdhury@uem.edu.in"
+            },
+            "debanjana datta mitra": {
+                name: "Prof. (Dr.) Debanjana Datta Mitra",
+                acronym: "DDM",
+                phone: "9674033751",
+                email: "debanjana.dattamitra@uem.edu.in"
+            },
+            "anirban ganguly": {
+                name: "Prof. (Dr.) Anirban Ganguly",
+                acronym: "ABG",
+                phone: "8582805315",
+                email: "anirban.ganguly@uem.edu.in"
+            }
+        };
+        // Toggle sample questions button
+        document.getElementById('toggle-samples').addEventListener('click', function() {
+            document.querySelector('.chat-container').classList.toggle('samples-visible');
+            
+            // Change icon based on state
+            const icon = this.querySelector('i');
+            if (document.querySelector('.chat-container').classList.contains('samples-visible')) {
+                icon.className = 'fas fa-times';
+                this.title = "Hide sample questions";
+            } else {
+                icon.className = 'fas fa-lightbulb';
+                this.title = "Show sample questions";
+            }
+        });
+
+        function setupEventListeners() {
+            // Clear chat button
+            document.getElementById('clear-chat').addEventListener('click', clearChat);
+            
+            // Send button animation
+            const sendButton = document.getElementById('send-button');
+            sendButton.addEventListener('click', function() {
+                this.classList.add('clicked');
+                setTimeout(() => this.classList.remove('clicked'), 300);
+            });
+        }
+
+        function sendMessage() {
+            const userInput = document.getElementById("user-input").value.trim().toLowerCase();
+            if (!userInput) return;
+
+            const chatBox = document.getElementById("chat-box");
+            appendMessage(userInput, 'user-message');
+            document.getElementById("user-input").value = "";
+
+            // Close sample box (if open) and reset toggle button
+            document.querySelector('.chat-container').classList.remove('samples-visible');
+            document.getElementById('toggle-samples').querySelector('i').className = 'fas fa-lightbulb';
+            
+            // First check if it's a faculty query
+            const facultyResponse = handleFacultyQuery(userInput);
+            if (facultyResponse) {
+                appendMessage(facultyResponse, 'bot-message');
+                return;
+            }
+
+            showTypingIndicator();
+
+            fetch("/get_response", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ message: userInput })
+            })
+            .then(response => {
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                return response.json();
+            })
+            .then(data => {
+                removeTypingIndicator();
+                if (data.status === 'error') throw new Error(data.response);
+                
+                const botMessage = appendMessage(data.response, 'bot-message');
+                
+                // Add sentiment emoji (optional)
+                const emojis = { 'positive': '😊', 'neutral': '😐', 'negative': '😞' };
+                if (data.sentiment && emojis[data.sentiment]) {
+                    const span = document.createElement('span');
+                    span.className = `sentiment-${data.sentiment}`;
+                    span.textContent = ` ${emojis[data.sentiment]}`;
+                    botMessage.querySelector('p').appendChild(span);
+                }
+            })
+            .catch(error => {
+                removeTypingIndicator();
+                console.error('Error:', error);
+                appendMessage("Sorry, I encountered an error. Please try again.", 'bot-message error-message');
+            });
+        }
+
+        // Add this new function to handle faculty queries
+        function handleFacultyQuery(query) {
+            // Check for faculty name patterns
+            const nameMatch = Object.keys(facultyDatabase).find(name => 
+                query.includes(name) || query.includes(facultyDatabase[name].acronym.toLowerCase())
+            );
+            
+            if (nameMatch) {
+                const faculty = facultyDatabase[nameMatch];
+                let response = `Here are the details for ${faculty.name} (${faculty.acronym}):\n`;
+                response += `📞 Phone: ${faculty.phone}\n`;
+                response += `📧 Email: ${faculty.email}`;
+                return response;
+            }
+            
+            // Check for general faculty requests
+            if (query.includes('faculty') || query.includes('professor') || query.includes('teacher')) {
+                if (query.includes('contact') || query.includes('number') || query.includes('email')) {
+                    return "I can provide contact details for faculty members. Please specify the name or acronym (e.g., 'contact details for Prof. Maumita Chakraborty' or 'MCH contact').";
+                }
+                return "We have many faculty members at UEM Kolkata. Could you please specify which faculty member you're asking about?";
+            }
+            
+            return null;
+        }
+
+        function appendMessage(text, className) {
+            const chatBox = document.getElementById("chat-box");
+            const messageElement = document.createElement("div");
+            messageElement.className = className;
+            messageElement.innerHTML = `<p>${text}</p>`;
+            chatBox.appendChild(messageElement);
+            chatBox.scrollTop = chatBox.scrollHeight;
+            return messageElement;
+        }
+
+        function showTypingIndicator() {
+            const chatBox = document.getElementById("chat-box");
+            const typingIndicator = document.createElement("div");
+            typingIndicator.className = "bot-message typing-indicator";
+            typingIndicator.id = "typing-indicator";
+            typingIndicator.innerHTML = "<span></span><span></span><span></span>";
+            chatBox.appendChild(typingIndicator);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function removeTypingIndicator() {
+            const typingIndicator = document.getElementById("typing-indicator");
+            if (typingIndicator) {
+                typingIndicator.remove();
+            }
+        }
+
+        function addSentimentIndicator(messageElement, sentiment) {
+            const sentimentEmoji = {
+                'positive': '😊',
+                'neutral': '😐',
+                'negative': '😞'
+            }[sentiment] || '';
+            
+            if (sentimentEmoji) {
+                const sentimentSpan = document.createElement('span');
+                sentimentSpan.className = `sentiment-${sentiment}`;
+                sentimentSpan.textContent = ` ${sentimentEmoji}`;
+                messageElement.querySelector('p').appendChild(sentimentSpan);
+            }
+        }
+
+        function addSampleQuestions() {
+            const samples = [
+                "What are the admission requirements?",
+                "How to apply for scholarships?",
+                "What are the facilities?",
+                "When does the academic year start?",
+                "Show me contact information"
+            ];
+            
+            const container = document.getElementById("sample-questions");
+            container.className = 'sample-questions-container';
+            
+            samples.forEach(question => {
+                const btn = document.createElement('button');
+                btn.className = 'sample-btn';
+                btn.innerHTML = `<i class="far fa-comment-dots"></i> ${question}`;
+                btn.onclick = () => {
+                    document.getElementById('user-input').value = question;
+                    sendMessage();
+                };
+                container.appendChild(btn);
+            });
+        }
+
+        function clearChat() {
+            const chatBox = document.getElementById("chat-box");
+            // Keep only the welcome message
+            while (chatBox.children.length > 1) {
+                chatBox.removeChild(chatBox.lastChild);
+            }
+            localStorage.removeItem('chatHistory');
+        }
+
+        function saveChatToHistory(message, sender) {
+            let history = JSON.parse(localStorage.getItem('chatHistory')) || [];
+            history.push({ sender, message, timestamp: new Date().toISOString() });
+            localStorage.setItem('chatHistory', JSON.stringify(history));
+        }
+
+        function restoreChatHistory() {
+            const history = JSON.parse(localStorage.getItem('chatHistory'));
+            if (history && history.length > 0) {
+                history.forEach(item => {
+                    appendMessage(item.message, `${item.sender}-message`);
+                });
+            }
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                sendMessage();
+                event.preventDefault(); // Prevent form submission if wrapped in form
+            }
+        }
+    </script>
+</body>
+</html>

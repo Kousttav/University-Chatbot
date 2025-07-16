@@ -1,0 +1,508 @@
+Query,Intent
+What are the undergraduate programs offered at UEM Kolkata?,courses
+Does UEM offer B.Tech in Artificial Intelligence?,courses
+What specializations are available in the MBA program?,courses
+Is there a BCA program at UEM Kolkata?,courses
+What are the eligibility criteria for B.Tech admission?,admission
+When does the admission process start for MBA?,admission
+What is the last date to apply for B.Tech?,admission
+Does UEM accept JEE Main scores?,admission
+What documents are needed for MBA admission?,admission
+Is there management quota in UEM Kolkata?,admission
+What is the fee structure for B.Tech program?,fees
+Are there installment options for fee payment?,fees
+Does UEM offer scholarships for meritorious students?,fees
+What is the hostel fee structure?,fees
+Are there any additional examination fees?,fees
+Which companies visit UEM for campus placements?,placement
+What was the highest package offered last year?,placement
+Does UEM provide internship opportunities?,placement
+What is the average package for CSE students?,placement
+How does the placement cell support students?,placement
+Does UEM have hostel facilities?,hostel
+What are the hostel rules and regulations?,hostel
+Are there separate hostels for girls and boys?,hostel
+What amenities are provided in the hostel?,hostel
+Is hostel accommodation available for all students?,hostel
+What are the library timings?,library
+Does the library have digital resources?,library
+How many books are available in the library?,library
+Can students access online journals?,library
+What are the library membership rules?,library
+When is the annual tech fest conducted?,events
+What cultural events are organized by UEM?,events
+Are there any sports competitions?,events
+Does UEM participate in inter-university events?,events
+How can students participate in college festivals?,events
+Where is UEM Kolkata located?,contact
+What is the contact number for admission queries?,contact
+How to reach UEM Kolkata by public transport?,contact
+What is the email for academic inquiries?,contact
+Are there any international collaborations?,international
+Does UEM have student exchange programs?,international
+Are there dual degree options with foreign universities?,international
+What research centers are available at UEM?,research
+Does UEM offer PhD programs?,research
+Are there industry-sponsored research projects?,research
+What are the faculty qualifications?,faculty
+How many faculty members have PhD degrees?,faculty
+What student clubs are active at UEM?,extracurricular
+Is there a coding club at UEM?,extracurricular
+What sports facilities are available?,extracurricular
+Does UEM have an entrepreneurship cell?,extracurricular
+What is the student-teacher ratio?,general
+How many campuses does UEM have?,general
+What is the vision of UEM Kolkata?,general
+Who is the chancellor of UEM?,general
+What accreditation does UEM have?,general
+Does UEM provide transportation facilities?,facilities
+Is there a cafeteria on campus?,facilities
+What medical facilities are available?,facilities
+Are there banking facilities on campus?,facilities
+What is the campus area of UEM Kolkata?,facilities
+How is the campus security?,facilities
+What are the notable alumni achievements?,alumni
+Which companies have recruited UEM graduates?,alumni
+What percentage of students get placed?,alumni
+Are there alumni networking events?,alumni
+Does UEM offer distance learning programs?,online
+Are there any online certification courses?,online
+What MOOC platforms does UEM collaborate with?,online
+Does UEM provide recorded lectures?,online
+What is the refund policy for withdrawn admissions?,policy
+What is the attendance requirement?,policy
+How are semester exams conducted?,policy
+What is the grading system?,policy
+Are there any dress code rules?,policy
+What is the history of UEM Kolkata?,about
+Who are the founders of UEM?,about
+What awards has UEM received?,about
+What makes UEM different from other universities?,about
+How many students are enrolled currently?,stats
+What is the percentage of female students?,stats
+How many international students study at UEM?,stats
+What is the faculty retention rate?,stats
+Does UEM have a gymnasium?,facilities
+Are there yoga classes offered?,facilities
+What counseling services are available?,support
+Is there a grievance redressal system?,support
+Does UEM provide career counseling?,support
+What language support is available?,support
+Are there any bridge courses for weak students?,academic
+How does UEM support slow learners?,academic
+What are the academic calendar dates?,academic
+When are semester breaks scheduled?,academic
+Does UEM organize industrial visits?,industry
+Are there mandatory internships?,industry
+How many companies visit for internships?,industry
+What is the stipend for summer internships?,industry
+What startups have emerged from UEM?,innovation
+Is there an incubation center?,innovation
+What patents does UEM hold?,innovation
+Are there innovation challenges for students?,innovation
+What is the campus recruitment process?,placement
+How many placement drives occur annually?,placement
+What soft skills training is provided?,placement
+Are mock interviews conducted?,placement
+What is the placement percentage for MBA?,placement
+Does UEM help with off-campus placements?,placement
+What is the syllabus for B.Tech CSE?,syllabus
+Where can I find course curriculum details?,syllabus
+Are syllabus copies available online?,syllabus
+How often is the syllabus updated?,syllabus
+What are the lab facilities like?,labs
+Which software tools are available in labs?,labs
+What are the computer lab timings?,labs
+Is there 24/7 lab access for final year students?,labs
+What are the workshop facilities?,workshop
+Are there automotive workshops?,workshop
+What machinery is available in mechanical workshops?,workshop
+Are workshop sessions mandatory?,workshop
+What conferences were held recently?,conferences
+Are there any upcoming seminars?,conferences
+Can students present papers at conferences?,conferences
+Does UEM organize guest lectures?,conferences
+What journals are published by UEM?,publications
+How many research papers are published annually?,publications
+Are there student research opportunities?,publications
+Can undergraduates publish papers?,publications
+What are the PhD admission requirements?,phd
+Is there a coursework component for PhD?,phd
+What is the typical PhD duration?,phd
+Are there full-time PhD scholarships?,phd
+What is the M.Tech admission process?,mtech
+Does UEM offer part-time M.Tech?,mtech
+What are the M.Tech specializations?,mtech
+Is GATE score mandatory for M.Tech?,mtech
+What are the BBA specializations?,bba
+Does UEM offer BBA in Digital Marketing?,bba
+What is the BBA admission process?,bba
+Are there BBA summer internships?,bba
+What are the BCA course modules?,bca
+Does BCA include industry projects?,bca
+What programming languages are taught in BCA?,bca
+Are there BCA placement guarantees?,bca
+What are the MCA admission criteria?,mca
+Does UEM offer lateral entry to MCA?,mca
+What is the MCA project requirement?,mca
+Are MCA students eligible for campus placements?,mca
+What are the B.Sc programs offered?,bsc
+Is there B.Sc in Data Science?,bsc
+What are the B.Sc Physics lab facilities?,bsc
+Are there B.Sc industry tie-ups?,bsc
+What are the M.Sc specializations?,msc
+Does UEM offer M.Sc in Chemistry?,msc
+What is the M.Sc dissertation requirement?,msc
+Are there M.Sc teaching assistantships?,msc
+What are the B.Com program details?,bcom
+Does UEM offer B.Com Honors?,bcom
+What are the B.Com practical components?,bcom
+Are there BCom industry visits?,bcom
+What are the M.Com specializations?,mcom
+Is there M.Com in Finance?,mcom
+What is the M.Com project evaluation process?,mcom
+Are M.Com students eligible for CA articleship?,mcom
+What are the BA program options?,ba
+Does UEM offer BA in English?,ba
+What are the BA elective choices?,ba
+Are there BA study tours?,ba
+What are the MA programs offered?,ma
+Is there MA in Economics?,ma
+What is the MA admission process?,ma
+Are MA programs UGC recognized?,ma
+What are the diploma courses available?,diploma
+Does UEM offer diploma in Mechanical Engineering?,diploma
+What is the duration of diploma programs?,diploma
+Are diploma holders eligible for lateral entry?,diploma
+What certification courses are offered?,certification
+Does UEM provide digital marketing certification?,certification
+What is the duration of certification programs?,certification
+Are there any free certification courses?,certification
+What are the foreign language courses offered?,language
+Does UEM teach Japanese?,language
+Are language courses credit-based?,language
+What are the language lab facilities?,language
+What are the NCC activities at UEM?,ncc
+Is NCC compulsory?,ncc
+What are the benefits of joining NCC?,ncc
+Are there NCC camps?,ncc
+What sports facilities are available?,sports
+Does UEM have a swimming pool?,sports
+What inter-college sports competitions are held?,sports
+Are there sports scholarships?,sports
+What cultural clubs exist?,cultural
+Is there a drama club?,cultural
+How often are cultural events held?,cultural
+Can students form new clubs?,cultural
+What are the debate society activities?,debate
+Are there inter-university debates?,debate
+How to join the debating team?,debate
+What debate competitions has UEM won?,debate
+What are the photography club activities?,photography
+Does UEM have photography equipment?,photography
+Are there photography workshops?,photography
+Can students borrow cameras?,photography
+What are the music club activities?,music
+Does UEM have musical instruments?,music
+Are there music classes?,music
+Can students form bands?,music
+What are the dance club activities?,dance
+Are there professional dance trainers?,dance
+How often are dance performances?,dance
+Are dance competitions held?,dance
+What are the literary society activities?,literary
+Does UEM publish a college magazine?,literary
+Are there creative writing workshops?,literary
+What literary awards has UEM won?,literary
+What are the entrepreneurship activities?,entrepreneurship
+Does UEM have a startup incubator?,entrepreneurship
+Are there funding opportunities for student startups?,entrepreneurship
+What successful startups began at UEM?,entrepreneurship
+What are the IEEE student branch activities?,ieee
+How to join IEEE?,ieee
+What IEEE competitions are held?,ieee
+Are there IEEE technical workshops?,ieee
+What are the ACM chapter activities?,acm
+How to join ACM?,acm
+What programming competitions are held?,acm
+Are there ACM certification opportunities?,acm
+What are the CSI student branch activities?,csi
+How to join CSI?,csi
+What CSI events are organized?,csi
+Are there CSI membership benefits?,csi
+What are the SAE student chapter activities?,sae
+How to join SAE?,sae
+What automotive projects are done?,sae
+Are there SAE industry visits?,sae
+What are the ASME student activities?,asme
+How to join ASME?,asme
+What mechanical engineering events are held?,asme
+Are there ASME design challenges?,asme
+What are the IET activities on campus?,iet
+How to join IET?,iet
+What IET lectures are organized?,iet
+Are there IET scholarships?,iet
+What are the ISTE student chapter activities?,iste
+How to join ISTE?,iste
+What ISTE workshops are conducted?,iste
+Are there ISTE certification programs?,iste
+What are the NPTEL local chapter activities?,nptel
+How to access NPTEL courses?,nptel
+Are NPTEL certificates provided?,nptel
+Do NPTEL courses carry credits?,nptel
+What are the AICTE activity details?,aicte
+How does UEM follow AICTE guidelines?,aicte
+What AICTE initiatives are implemented?,aicte
+Are there AICTE scholarships?,aicte
+What are the UGC recognition details?,ugc
+Is UEM UGC recognized?,ugc
+What UGC programs are available?,ugc
+Are there UGC fellowships?,ugc
+What are the NBA accreditation details?,nba
+Which programs are NBA accredited?,nba
+What are NBA accreditation benefits?,nba
+When is the next NBA visit?,nba
+What are the NAAC accreditation details?,naac
+What is UEM's NAAC grade?,naac
+When was the last NAAC assessment?,naac
+What are NAAC quality indicators?,naac
+What are the ARIIA ranking details?,ariia
+What is UEM's ARIIA ranking?,ariia
+How does UEM perform in innovation?,ariia
+What are ARIIA parameters?,ariia
+What are the NIRF ranking details?,nirf
+What is UEM's NIRF ranking?,nirf
+How to improve NIRF ranking?,nirf
+What are NIRF parameters?,nirf
+What are the Times ranking details?,times
+What is UEM's Times ranking?,times
+How does UEM compare to other private universities?,times
+What are Times ranking parameters?,times
+What are the QS ranking details?,qs
+Is UEM in QS rankings?,qs
+How to improve QS ranking?,qs
+What are QS ranking parameters?,qs
+What are the infrastructure details?,infrastructure
+What is the campus area?,infrastructure
+How many buildings are there?,infrastructure
+What are the construction plans?,infrastructure
+What are the laboratory details?,laboratories
+How many labs are there?,laboratories
+What equipment is available?,laboratories
+Are labs open after hours?,laboratories
+What are the classroom facilities?,classrooms
+Are classrooms air-conditioned?,classrooms
+What audio-visual equipment is available?,classrooms
+Are smart classrooms available?,classrooms
+What are the seminar hall facilities?,seminar
+How many seminar halls are there?,seminar
+What is the seating capacity?,seminar
+Are halls available for student events?,seminar
+What are the conference facilities?,conference
+Is video conferencing available?,conference
+What is the largest conference room capacity?,conference
+Are recording facilities available?,conference
+What are the auditorium facilities?,auditorium
+What is the seating capacity?,auditorium
+Are cultural performances held?,auditorium
+Can students book the auditorium?,auditorium
+What are the canteen facilities?,canteen
+How many canteens are there?,canteen
+What cuisines are available?,canteen
+Are there healthy food options?,canteen
+What are the hostel facilities?,hostel
+How many hostels are there?,hostel
+What are the room types?,hostel
+Are laundry services available?,hostel
+What are the medical facilities?,medical
+Is there a doctor on campus?,medical
+What emergency services are available?,medical
+Are ambulances available?,medical
+What are the sports facilities?,sports
+What indoor games are available?,sports
+Are coaches available?,sports
+What sports tournaments are held?,sports
+What are the gym facilities?,gym
+Are trainers available?,gym
+What equipment is there?,gym
+Is gym membership free?,gym
+What are the transport facilities?,transport
+Are buses available?,transport
+What are the routes?,transport
+Is transport free?,transport
+What are the security measures?,security
+How many security personnel?,security
+Are CCTV cameras installed?,security
+What are emergency protocols?,security
+What are the WiFi facilities?,wifi
+Is WiFi available everywhere?,wifi
+What is the bandwidth?,wifi
+Are there usage limits?,wifi
+What are the computer facilities?,computers
+How many computers are available?,computers
+What are the specifications?,computers
+Is 24/7 access available?,computers
+What are the printing facilities?,printing
+Are printers available?,printing
+What are the printing charges?,printing
+Is color printing available?,printing
+What are the banking facilities?,banking
+Is there an ATM on campus?,banking
+Which bank branches are nearby?,banking
+Are banking services available?,banking
+What are the stationery facilities?,stationery
+Is there a bookstore?,stationery
+What items are available?,stationery
+Are discounts offered?,stationery
+What are the parking facilities?,parking
+Is parking free?,parking
+How many parking slots?,parking
+Is two-wheeler parking available?,parking
+What are the green initiatives?,green
+Are there solar panels?,green
+What waste management systems?,green
+Are there rainwater harvesting systems?,green
+What are the disability facilities?,disability
+Are ramps available?,disability
+Are elevators available?,disability
+What special support is provided?,disability
+What are the prayer facilities?,prayer
+Are separate prayer rooms available?,prayer
+What are the timings?,prayer
+Are facilities for all religions?,prayer
+What are the student welfare measures?,welfare
+Is there a student council?,welfare
+What grievance mechanisms?,welfare
+Are counseling services available?,welfare
+What are the alumni activities?,alumni
+Is there an alumni association?,alumni
+How to connect with alumni?,alumni
+Are alumni meets organized?,alumni
+What are the industry collaborations?,industry
+Which companies have MOUs?,industry
+What joint programs are offered?,industry
+Are there industry advisory boards?,industry
+What are the research collaborations?,research
+Which universities have partnerships?,research
+What joint research projects?,research
+Are international collaborations?,research
+What are the community programs?,community
+Are there rural development programs?,community
+What social initiatives?,community
+Are NSS activities conducted?,community
+What are the extension activities?,extension
+Are there adult education programs?,extension
+What literacy programs?,extension
+Are there vocational training programs?,extension
+What are the women empowerment programs?,women
+Are there special cells for women?,women
+What safety measures?,women
+Are self-defense classes offered?,women
+What are the startup support systems?,startup
+Is there an incubation center?,startup
+What funding opportunities?,startup
+Are mentorship programs available?,startup
+What are the patent filing details?,patent
+How many patents filed?,patent
+What support is provided?,patent
+Are there incentives?,patent
+What are the copyright details?,copyright
+How many copyrights filed?,copyright
+What support is provided?,copyright
+Are there incentives?,copyright
+What are the trademark details?,trademark
+How many trademarks filed?,trademark
+What support is provided?,trademark
+Are there incentives?,trademark
+What are the IPR cell activities?,ipr
+What awareness programs?,ipr
+Are workshops conducted?,ipr
+What legal support?,ipr
+What are the consultancy services?,consultancy
+Which departments offer consultancy?,consultancy
+How to avail services?,consultancy
+What are the charges?,consultancy
+What are the testing services?,testing
+Which labs offer testing?,testing
+How to avail services?,testing
+What are the charges?,testing
+What are the calibration services?,calibration
+Which instruments are calibrated?,calibration
+How to avail services?,calibration
+What are the charges?,calibration
+What are the certification services?,certification
+Which certifications offered?,certification
+How to apply?,certification
+What are the fees?,certification
+What are the training programs?,training
+Which skills are taught?,training
+How to enroll?,training
+What are the fees?,training
+What are the conference services?,conference
+How to organize events?,conference
+What facilities provided?,conference
+What are the charges?,conference
+What are the publication services?,publication
+How to publish papers?,publication
+What support provided?,publication
+What are the charges?,publication
+What are the translation services?,translation
+Which languages supported?,translation
+How to avail?,translation
+What are the charges?,translation
+What are the editing services?,editing
+What documents edited?,editing
+How to avail?,editing
+What are the charges?,editing
+What are the proofreading services?,proofreading
+What documents proofread?,proofreading
+How to avail?,proofreading
+What are the charges?,proofreading
+What are the transcription services?,transcription
+What audio transcribed?,transcription
+How to avail?,transcription
+What are the charges?,transcription
+What are the digitization services?,digitization
+What materials digitized?,digitization
+How to avail?,digitization
+What are the charges?,digitization
+What are the archival services?,archival
+What materials archived?,archival
+How to access?,archival
+What are the charges?,archival
+What are the library services?,library
+How to borrow books?,library
+What digital resources?,library
+Are inter-library loans available?,library
+What are the career services?,career
+How to get placement help?,career
+What interview training?,career
+Are resume services available?,career
+What are the counseling services?,counseling
+How to book sessions?,counseling
+What issues addressed?,counseling
+Are group sessions available?,counseling
+What are the health services?,health
+How to see doctor?,health
+What medical tests?,health
+Are medicines dispensed?,health
+What are the insurance services?,insurance
+What policies available?,insurance
+How to claim?,insurance
+What are the premiums?,insurance
+What are the legal services?,legal
+What advice provided?,legal
+How to consult?,legal
+Are there lawyers on campus?,legal
+What are the financial services?,financial
+What advice provided?,financial
+How to avail?,financial
+Are there planners available?,financial
+What are the tax services?,tax
+What filing help?,tax
+How to avail?,tax
+Are there workshops?,tax
+What are the investment services?,investment
+What advice provided?,investment
+How to avail?,investment
+Are there seminars?,investment
